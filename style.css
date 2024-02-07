@@ -7,19 +7,6 @@
   list-style: none;
 }
 
-.Sign-in-section {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(3, 3, 3, 0.575) 0%,
-      rgba(3, 3, 3, 0.575) 100%
-    ),
-    url(/image/signup-bg.png);
-  width: 100%;
-  height: 1007px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /*  Landing Page*/
 .head-container {
   background-image: url(/image/landing-bg.png);
@@ -192,7 +179,93 @@
   padding-top: 2.5rem;
 }
 
+.landing-footer{
+  width: 100%;
+  height: 460px;
+  background: #000;
+  color: #fff;
+  text-align: left;
+  border-top: 5px solid #222222;
+}
+
+.landing-footer-text-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  height: 200px;
+}
+
+.landing-footer-text-container p {
+  margin-top: 1rem;
+  cursor: pointer;
+  color: #757575;
+  font-weight: 400;
+}
+
+.landing-footer-text-container .call {
+  margin-top: 3rem;
+  font-size: 16px;
+
+}
+
+.landing-footer-links {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.landing-footer-links p {
+  margin-right: 7rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.language a {
+  display: flex;
+  height: 50px;
+  width: 130px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  background: #000;
+  margin-bottom: 2rem;
+}
+
+.lan-img-1 {
+  height: 55px;
+  width: 55px;
+  margin-left: -0.5rem;
+  cursor: pointer;
+}
+
+.language a p {
+  margin-top: -0.00001rem;
+  margin-left: -0.3rem;
+}
+
+.lan-img-2 {
+  height: 50px;
+  width: 50px;
+  margin-left: -1rem;
+  cursor: pointer;
+}
+
+
 /*  Login Page*/
+.Sign-in-section {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(3, 3, 3, 0.575) 0%,
+      rgba(3, 3, 3, 0.575) 100%
+    ),
+    url(/image/signup-bg.png);
+  width: 100%;
+  height: 1007px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 nav {
   width: 100%;
   height: 80px;
@@ -313,7 +386,7 @@ span {
   line-height: 1.2;
 }
 
-footer {
+.footer-container {
   height: 250px;
   background: #000000bf;
   margin-top: 8rem;
