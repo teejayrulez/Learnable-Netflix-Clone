@@ -3,41 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Netflix giriş sayfası" />
     <link rel="stylesheet" href="../style.css" />
-    <title>Sign-In</title>
+    <title>Sign-In — Netflix</title>
   </head>
   <body class="Sign-in-section">
     <header>
       <nav>
-        <a href="../index.html"><img src="../image/Logo.png" /></a>
+        <a href="../index.html" aria-label="Netflix ana sayfa">
+          <img src="../image/Logo.png" alt="Netflix" />
+        </a>
       </nav>
     </header>
 
     <main>
       <section>
         <div class="container">
-          <h3 class="sign-in-header">Sign-In</h3>
-          <div class="details-input" role="Email-&-Password-input">
-            <input type="text" placeholder="Email or phone number" />
-            <input type="password" placeholder="Password" />
-          </div>
-          <a href="./profile.html"><button>Sign-In</button></a>
-          <div class="remember-btn" role="remember-btn">
-            <input type="checkbox" /><span class="with-checkbox"
-              >Remember me</span
-            >
-            <span>Need help?</span>
-          </div>
-          <div class="fb-container" role="fb-section">
-            <img class="fb-img" src="../image/fb.png" /><span class="fb-p"
-              >Login with Facebook</span
-            >
+          <h1 class="sign-in-header">Sign In</h1>
+
+          <form class="details-input" onsubmit="return false;">
+            <label class="sr-only" for="email">Email or phone number</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Email or phone number"
+              autocomplete="username"
+            />
+
+            <label class="sr-only" for="password">Password</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              autocomplete="current-password"
+            />
+          </form>
+
+          <a href="./profile.html" class="btn-primary">Sign In</a>
+
+          <div class="remember-btn">
+            <label class="checkbox-label">
+              <input type="checkbox" />
+              <span class="with-checkbox">Remember me</span>
+            </label>
+            <a href="#" class="need-help">Need help?</a>
           </div>
 
-          <div class="sign-up-container" role="sign-up">
+          <div class="fb-container">
+            <img class="fb-img" src="../image/fb.png" alt="Facebook" />
+            <span class="fb-p">Login with Facebook</span>
+          </div>
+
+          <div class="sign-up-container">
             <p>New to Netflix?</p>
             <a href="#"><span>Sign Up now</span></a>
           </div>
+
           <p class="seal">
             This page is protected by Google reCAPTCHA to ensure you're not a
             bot. <a href="#">Learn more.</a>
@@ -47,7 +68,7 @@
     </main>
 
     <footer class="footer-container">
-      <div class="footer-text-container" role="footer-text">
+      <div class="footer-text-container">
         <p class="call">Questions? Call 1-844-505-2993</p>
         <div class="footer-links">
           <div>
@@ -58,14 +79,18 @@
             <p>Help Center</p>
             <p>Corporate Information</p>
           </div>
-          <p>Terms of Use</p>
-          <p>Privacy</p>
+          <div>
+            <p>Terms of Use</p>
+          </div>
+          <div>
+            <p>Privacy</p>
+          </div>
         </div>
         <div class="language">
-          <a>
-            <img class="lan-img-1" src="../image/earth.png" />
+          <a href="#">
+            <img class="lan-img-1" src="../image/earth.png" alt="Globe" />
             <p>English</p>
-            <img class="lan-img-2" src="../image/arrow-down.png" />
+            <img class="lan-img-2" src="../image/arrow-down.png" alt="Dropdown" />
           </a>
         </div>
       </div>
